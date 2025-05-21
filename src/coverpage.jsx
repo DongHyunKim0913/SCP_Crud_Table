@@ -1,5 +1,5 @@
 import React from "react";
-import "./CoverPage.css"; // Make sure to add your CSS file
+import "./coverpage.css"; // Make sure to add your CSS file
 
 const CoverPage = () => {
   return (
