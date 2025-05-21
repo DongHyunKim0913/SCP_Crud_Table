@@ -1,0 +1,54 @@
+.cover-container {
+  background: 
+    linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.8)),
+    url('https://w0.peakpx.com/wallpaper/705/874/HD-wallpaper-scp-logo-logo-minimalism-minimalist.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 50px 70px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.overlay:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.9);
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-style: italic;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.3rem;
+  line-height: 1.75;
+  color: #e0e0e0;
+}

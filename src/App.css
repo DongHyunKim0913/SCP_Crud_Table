@@ -1,0 +1,130 @@
+/* === General App Container === */
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+}
+/* === Navigation Bar === */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Transparent background */
+  display: flex;
+  justify-content: center;  /* Centers the navigation items */
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* === Navigation Buttons === */
+.nav button {
+  margin: 0 15px;               /* Adjust button spacing */
+  padding: 12px 20px;           /* Bigger padding */
+  font-size: 1.1rem;            /* Bigger text */
+  background: #b3b0ad;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;           /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.nav button:hover {
+  background: #fffdfb;          /* Darker hover color */
+  transform: scale(1.05);       /* Zoom effect */
+}
+
+/* === Detail Section (e.g., Image Preview) === */
+.detail img {
+  border: 2px solid #ccc;
+  margin-top: 10px;
+  width: 50%; /* Full width */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: green;
+}
+
+
+/* === Admin Table === */
+.admin table {
+  width: 200%; /* Unusually wide – possibly intended for horizontal scrolling */
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #c9cec0;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(27, 13, 13, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-left: -600px; /* Recenters wide table */
+}
+
+/* Table Cells and Header */
+.admin th,
+.admin td {
+  padding: 12px 15px;
+  border: 1px solid #b4a4a4;
+  text-align: center;
+}
+
+.admin th {
+  background-color: #dccdcd;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Zebra Striping */
+.admin tr:nth-child(even) {
+  background-color: #b9bcc2;
+}
+
+/* Hover Effect */
+.admin tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Selected Row Highlight */
+.admin tr.selected {
+  background-color: #d1e7dd;
+}
+
+/* === Form Styling === */
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons inside Forms */
+.form button {
+  padding: 10px 20px;
+  background: rgb(204, 207, 204);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: rgb(168, 180, 168);
+}
+
+/* File Input Specific Styling */
+.form input[type="file"] {
+  padding: 0;
+}
