@@ -72,23 +72,29 @@ function App() {
 
   return (
     <div className="app">
-      
+
 
       {/* Navigation buttons for each SCP and admin view */}
       <nav className="nav">
-        {records.map((rec) => (
-          <button
-            key={rec.id}
-            onClick={() => {
-              setSelectedSCP(rec);
-              setView('detail');
-            }}
-          >
-            {rec.item}
-          </button>
-        ))}
+        <div className="dropdown">
+          <button className="dropbtn">SCP Records ▼</button>
+          <div className="dropdown-content">
+            {records.map((rec) => (
+              <button
+                key={rec.id}
+                onClick={() => {
+                  setSelectedSCP(rec);
+                  setView('detail');
+                }}
+              >
+                {rec.item}
+              </button>
+            ))}
+          </div>
+        </div>
         <button onClick={() => setView('admin')}>Admin</button>
       </nav>
+
 
       {/* Detail view for a selected SCP */}
       {view === 'detail' && selectedSCP && (

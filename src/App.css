@@ -1,3 +1,11 @@
+body {
+  width: 100vw;
+}
+
+:root {
+  width: 100%;
+}
+
 /* === General App Container === */
 .app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,6 +16,8 @@
   font-size: larger;
 }
 /* === Navigation Bar === */
+/* Keep your existing .nav and .nav button styles */
+
 .nav {
   position: fixed;
   top: 0;
@@ -15,29 +25,90 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.7); /* Transparent background */
   display: flex;
-  justify-content: center;  /* Centers the navigation items */
+  justify-content: center;
   align-items: center;
   padding: 10px 0;
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000;
 }
 
 /* === Navigation Buttons === */
 .nav button {
-  margin: 0 15px;               /* Adjust button spacing */
-  padding: 12px 20px;           /* Bigger padding */
-  font-size: 1.1rem;            /* Bigger text */
+  margin: 0 15px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
   background: #b3b0ad;
   color: rgb(0, 0, 0);
   border: none;
-  border-radius: 6px;           /* Rounded corners */
+  border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover Effect */
 .nav button:hover {
-  background: #fffdfb;          /* Darker hover color */
-  transform: scale(1.05);       /* Zoom effect */
+  background: #fffdfb;
+  transform: scale(1.05);
+}
+
+/* === Dropdown Styles === */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  margin: 0 15px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background: #b3b0ad;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Dropdown Button */
+.dropbtn:hover {
+  background: #fffdfb;
+  transform: scale(1.05);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1001;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Style for Buttons Inside Dropdown */
+.dropdown-content button {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #000;
+  width: 100%;
+}
+
+.dropdown-content button:hover {
+  background-color: #e7e5e3;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
 }
 
 /* === Detail Section (e.g., Image Preview) === */
@@ -56,7 +127,7 @@
 
 /* === Admin Table === */
 .admin table {
-  width: 200%; /* Unusually wide – possibly intended for horizontal scrolling */
+  width: auto; /* Unusually wide – possibly intended for horizontal scrolling */
   border-collapse: collapse;
   margin-top: 10px;
   font-family: Arial, sans-serif;
@@ -67,7 +138,7 @@
   border-radius: 4px;
   overflow: hidden;
   transition: all 0.3s ease;
-  margin-left: -600px; /* Recenters wide table */
+  margin-left: 10px; /* Recenters wide table */
 }
 
 /* Table Cells and Header */

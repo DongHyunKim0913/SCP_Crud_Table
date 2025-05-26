@@ -6,25 +6,18 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 10px 20px;
   color: #f9f9f9;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.65);
-  padding: 50px 70px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85);
-  max-width: 900px;
+:root {
   width: 100%;
-  text-align: center;
-  transition: all 0.3s ease;
 }
 
 .overlay:hover {
